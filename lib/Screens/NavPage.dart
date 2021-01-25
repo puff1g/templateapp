@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:templateapp/Screens/NavPage.dart';
+import 'package:templateapp/Screens/NavigationOpgtions/Drawer.dart';
 import 'package:templateapp/Style/Variables.dart';
 import 'package:templateapp/Style/config.dart';
 import 'package:templateapp/Widgets/CardTab.dart';
 import 'package:get/get.dart';
 
-class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
+class NavPage extends StatefulWidget {
+  NavPage({Key key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _NavPageState createState() => _NavPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _NavPageState extends State<NavPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('Navigations Options'),
         actions: [
           FlatButton(
             child: Text("Press"),
@@ -33,10 +33,10 @@ class _HomePageState extends State<HomePage> {
             CardTab(
               child: InkWell(
                 onTap: () {
-                  Get.to(NavPage());
+                  Get.to(DrawerPage());
                 },
                 child: Text(
-                  "Navigation Options",
+                  "Navigation Drawer",
                   style: TextStyle(color: black, fontSize: 25),
                 ),
               ),
@@ -44,10 +44,10 @@ class _HomePageState extends State<HomePage> {
             CardTab(
               child: InkWell(
                 onTap: () {
-                  Get.to(NavPage());
+                  Get.back();
                 },
                 child: Text(
-                  "Buttons",
+                  "More comming soon!",
                   style: TextStyle(color: black, fontSize: 25),
                 ),
               ),

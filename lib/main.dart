@@ -1,6 +1,6 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:templateapp/Screens/HomePage.dart';
-import 'package:get/get.dart';
 import 'package:templateapp/Style/config.dart';
 
 void main() async {
