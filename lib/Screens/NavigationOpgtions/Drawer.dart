@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:templateapp/Screens/HomePage.dart';
-import 'package:templateapp/Screens/NavPage.dart';
 import 'package:templateapp/Style/Variables.dart';
 import 'package:templateapp/Style/config.dart';
 import 'package:templateapp/Widgets/CardTab.dart';
